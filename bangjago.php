@@ -5,7 +5,7 @@ echo "\n";
 echo "\e[96m            (Selamat Datang $input)               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
-        $nama = nama(INFO TPL);
+        $nama = nama();
         $email = str_replace(" ", "", $nama) . mr_rizal(100, 999);
         echo color("purple","📲▶️ Nomor : ");
         // $no = trim(fgets(STDIN));
@@ -28,7 +28,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }
         else{
             $hp = '1'.substr(trim($nohp),0,13);
-        }
+        }b
     }
         $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$hp.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
